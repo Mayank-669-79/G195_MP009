@@ -1,0 +1,21 @@
+{
+  "python.defaultInterpreterPath": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+  "python.pyrefly.configPath": "${workspaceFolder}\\pyrefly.toml",
+  "python.pyrefly.typeCheckingMode": "off",
+  "python.pyrefly.disableTypeErrors": true,
+  "python.analysis.extraPaths": [
+    "./src",
+    "./",
+    "C:\\Users\\nirna\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages",
+    "C:\\Users\\nirna\\AppData\\Roaming\\Python\\Python312\\site-packages"
+  ],
+  "python.autoComplete.extraPaths": [
+    "./src",
+    "./",
+    "C:\\Users\\nirna\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages",
+    "C:\\Users\\nirna\\AppData\\Roaming\\Python\\Python312\\site-packages"
+  ],
+  "python.testing.pytestArgs": ["tests"],
+  "python.testing.unittestEnabled": false,
+  "python.testing.pytestEnabled": true
+}
