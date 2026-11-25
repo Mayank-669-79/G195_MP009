@@ -1,0 +1,44 @@
+data:
+  raw_train_path: "data/raw/train.csv"
+  raw_later_path: "data/raw/later.csv"
+  holdout_features_path: "data/raw/holdout_features.csv"
+  clean_train_path: "data/processed/clean_train.csv"
+  predictions_path: "predictions/holdout_predictions.csv"
+
+model:
+  target_col: "litres_per_day"
+  features:
+    - flats_occupied
+    - temp_c
+    - garden_area_m2
+    - tank_level_morning_pct
+    - leak_complaints
+    - supply_hours
+    - supply_source
+    - tower
+  numeric_features:
+    - flats_occupied
+    - temp_c
+    - garden_area_m2
+    - tank_level_morning_pct
+    - leak_complaints
+    - supply_hours
+  categorical_features:
+    - supply_source
+    - tower
+  model_type: "gradient_boosting"
+  n_estimators: 100
+  learning_rate: 0.1
+  max_depth: 4
+  random_state: 42
+  champion_model_path: "models/model.joblib"
+
+tracking:
+  tracking_uri: "sqlite:///mlflow.db"
+  experiment_name: "mp009_water_demand"
+  registered_model_name: "water_demand_regressor"
+
+monitoring:
+  later_train_split_ratio: 0.70
+  promotion_threshold_pct: 0.10
+  num_psi_bins: 10

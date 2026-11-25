@@ -1,0 +1,24 @@
+[project]
+name = "mp009-housing-water-demand"
+version = "1.0.0"
+description = "Housing Society Water Demand Prediction (Lucknow) - MP009"
+authors = [
+    { name = "Sarvatha Shekhawat", email = "SarvathaShekhawat@users.noreply.github.com" },
+    { name = "Nirnay Maiti", email = "209288447+NirnayMaiti28@users.noreply.github.com" },
+    { name = "Mayank Gupta", email = "MayankGupta@users.noreply.github.com" },
+]
+readme = "README.md"
+requires-python = ">=3.12"
+
+[tool.pyrefly]
+project-includes = ["**/*.py*"]
+python-interpreter-path = "C:\\Users\\nirna\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+search-path = [".", "src"]
+site-package-path = [
+    "C:\\Users\\nirna\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages",
+    "C:\\Users\\nirna\\AppData\\Roaming\\Python\\Python312\\site-packages"
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
