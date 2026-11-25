@@ -1,0 +1,53 @@
+group_id: G195
+problem_id: MP009
+data_issues:
+  leaking_column:
+    present: false
+    column: null
+  unit_mixup:
+    present: true
+    column: supply_hours
+    group_value: Tower B
+    factor: 60
+  sentinel_value:
+    present: false
+    column: null
+    value: null
+    count: null
+  duplicate_rows:
+    present: true
+    count: 38
+  stuck_sensor:
+    present: false
+    column: null
+    start_date: null
+    end_date: null
+  target_typos:
+    present: true
+    count: 13
+  spelling_variants:
+    present: false
+    column: null
+    true_levels: null
+tracking:
+  experiment_name: mp009_water_demand
+  best_run_id: 8a589db1dd5c4946bcd2bed1695ab7f9
+  registered_model_name: water_demand_regressor
+  champion_version: 4
+monitoring:
+  psi:
+    flats_occupied: 0.0509
+    temp_c: 2.8778
+    garden_area_m2: 0.0662
+    tank_level_morning_pct: 0.0759
+    leak_complaints: 0.0226
+    supply_hours: 0.0228
+  most_drifted_feature: temp_c
+  mae_by_group:
+    Tower A: 2683.56
+    Tower B: 18173.3
+    Tower C: 2494.41
+  worst_served_group: Tower B
+  mae_v1_on_check: 8245.16
+  mae_v2_on_check: 4902.36
+  decision: promote
