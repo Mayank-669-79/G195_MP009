@@ -1,27 +1,3 @@
-# Python
-__pycache__/
-*.py[cod]
-*.class
-*.so
-.Python
-env/
-venv/
-.venv/
-
-# Testing & Cache
-.pytest_cache/
-.coverage
-htmlcov/
-
-# MLflow run artifacts (SQLite database mlflow.db is committed)
-mlruns/
-mlartifacts/
-
-# Raw CSVs (DVC tracks them in data/raw)
-data/train.csv
-data/later.csv
-data/processed/
-
-# OS files
-.DS_Store
-Thumbs.db
+/config.local
+/tmp
+/cache
